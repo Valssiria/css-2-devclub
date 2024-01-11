@@ -72,11 +72,11 @@ button{
 button:hover{
     background: #5d5d7d;
     color: #23264f;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 button:active{
-    opacity: .5;
+    opacity: .8;
 }
 
 a{
