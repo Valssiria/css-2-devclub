@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+      <meta charset="UTF-8">
+      <met http-equiv="X-UA-compatible" content="IE=edge">
+
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+            <link rel="stylesheet" href="./styles.css">
+
+            <title>Pseudo-class</title>
+</head>
+
+<!-- Ex=> : :disabled => elemento desabilitado (button / input) -->
+
+<body>
+
+      <a href="#f45dc"> meu link boladão </a>
+
+      <p> pseudo-classe CSS é uma palavra-chave adicionada
+            a um seletor que especifica um estado especial
+            do elemento selecionado. Por exemplo, :hover
+            pode ser usado para alterar a cor de um botão
+            quando o usuário passar o cursor sobre ele.
+            As pseudo-classes permitem que você aplique
+            um estilo a um elemento não apenas em relação
+            ao conteúdo da árvore do documento, mas também
+            em relação a fatores externos, como o histórico
+            de navegação, o status do conteúdo ou a posição do mouse. </p>
+
+      <!-- :disabled => elemento desabilitado (button / input)  -->
+      <!-- <input type="checkbox" disabled> -->
+
+        <!-- :read-only => selecionar um input ou textarea que são apenas leituras  -->
+       <input value="esse é meu input" readonly> 
+
+            <!-- se eu deixar minha div vazia ela trocara de cor -->
+     <div class="container"></div>
+
+</body>
+<style>
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+      }
+
+      
+
+      /* :active => quando o elemento está ativo, ou seja, quando ele está sendo pressionado. */
+      a:active {
+            color: red;
+       
+
+      }
+
+      /*  :visited => seleciona o link que foi visitado. */
+      a:visited {
+            color: #69087d;
+      }
+
+      /* :hover => quando o mause passa por cima do elemento. */
+      a:hover {
+            color: aqua;
+        padding-left: 50px;
+      }
+
+      p {
+            color: #0018ff;
+            margin-top: 20px;
+            margin-left: 40px;
+      }
+
+      /* :hover => quando o mause passa por cima do elemento. */
+      p:hover {
+            color: #69087d;
+      }
+
+      /*:checked => usado em radio/ checkbox/  select.   */
+      input:checked {
+            width: 100px;
+            height: 100px;
+      }
+
+            /* :disabled => elemento desabilitado (button / input) */
+            /* input:disabled {
+                  width: 100px;
+                  height: 100px; */
+
+                  /*  :enabled => elemento esta habilitado (online). */
+
+                  /* input:enabled {
+                        width: 100px;
+                        height: 100px;
+                  } */
+
+                  /* :focus => é aplicada quando um elemento recebe foco, 
+                  o que pode ocorrer quando o usuário selecionar um elemento.
+            */
+            input:focus{
+                 
+                  border: 2px solid red;
+                  outline: none;
+            }
+
+            /*  :read-only => selecionar um input ou textarea que são apenas leituras */
+
+            input:read-only{
+                 
+                 border: 2px solid rgb(219, 230, 8);
+                 outline: none;
+                 margin-top: 10px;
+                 margin-left: 40px;
+           }
+
+           /*  :empty => elemento que não tem filho */
+
+           .container{
+            height: 100px;
+            width: 100px;
+            background: orangered;
+            margin-top: 20px;
+            margin-left: 50px;
+           }
+           /*  :empty => elemento que não tem filho so ficarar de outra cor se quaso estiver vazia a div */
+           .container:empty{
+            background-color: rgb(12, 84, 218);
+           }
+
+
+      
+</style>
+
+</html>

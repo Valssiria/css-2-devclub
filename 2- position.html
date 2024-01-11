@@ -1,0 +1,101 @@
+<!-- position -->
+
+
+      <!--
+
+      = Position static (Padrão) => não aceitar valores de top, bottom, right, left
+
+      =>Position fixed - Fixa o elemento na tela
+
+      =>Position stick - age como um adesivo, fixa o elemento so onde eu determinar e
+
+
+      =>Position relative - posição relativa a posição inicial dele
+
+
+      =>Position absolute - Posição absoluta(Fixa) o algum elemento ou a página
+
+      - Se não tiver pai/ pai for static => posiciona referente a página
+      - Se o pai não for static => Posiciona referente ao pai
+
+
+      PROPRIEDADE
+      -TOP
+      -BOTTOM
+      -LEFT
+      -RIGHT
+
+       -->
+
+
+       <!DOCTYPE html>
+       <html lang="pt">
+       <head>
+             <meta charset="UTF-8">
+                <met http-equiv="X-UA-compatible" content="IE=edge">
+
+          <meta name="viewport"content="width=device-width,initial-scale=1.0">
+
+         <link rel="stylesheet" href ="./styles.css">
+
+             <title>Position</title>
+       </head>
+
+       <body>
+             <div class="div-dad">
+                   <div class="div-son"></div>
+             </div>
+
+              <div class="tananam"></div>
+       </body>
+
+       <style>
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+      height: 200vh;
+      width: 200vw;
+      
+}
+
+
+.div-dad{
+      height: 350px;
+      width: 350px;
+      background-color: #ff0088;
+
+     position: sticky;
+     margin: 200px;
+     top: 50px;
+     left: 50px;
+      
+
+      /* position: fixed;
+      opacity: 0.6;
+      top: 50px;
+      left: 50px;
+      right: 36px;
+      bottom: 0; */
+
+}
+
+.div-son{
+     height: 150px;
+      width: 150px;
+      background-color:#ffdc00;
+
+}
+
+
+.tananam{
+      height: 100px;
+      width: 100px;
+      background-color:#ff000a;
+
+    /* esse fica static quando o pai fica como fixed */
+}
+
+       </style>
+       </html>

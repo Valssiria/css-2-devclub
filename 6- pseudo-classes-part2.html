@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+      <meta charset="UTF-8">
+
+      <met http-equiv="X-UA-compatible" content="IE=edge">
+
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+            <link rel="stylesheet" href="./styles.css">
+
+
+            <title>Pseudo-Class-pt2 </title>
+
+</head>
+
+<body>
+
+      <h1>Ex:1 first-child Primeiro filho/ <br>
+            ex: Primeiro (li) de uma (ul) e Primeiro (spam) de uma (div).</h1>
+
+      <ul>
+            <li>Primeiro/first-child=Primeiro filho</li>
+            <li>Segundo</li>
+            <li>Terceiro</li>
+            <li>Quarto</li>
+            <li>Quinto</li>
+            <li>Sexto</li>
+            <li>Sétimo/last-child=Ultimo filho.</li>
+      </ul>
+      <br>
+
+      <div class="container">
+
+            <p> How <br> Ex:2 first-of-type => Primeiro elemento de seu tipo
+                  entre os filhos de seu elemento pai. eu sou o 1⁰ parágrafo</p>
+            <br>
+
+            <span>Olá <br> first-of-type => Primeiro elemento de seu tipo 1⁰ span </span>
+            <br>
+            <br>
+            <span class="excluido">hey <br> /last-of-type= Ultimo elemento tipo span</span>
+            <br>
+            <br>
+             <p>Let's Go <br> /last-of-type= Ultimo elemento do seu tipo entre 
+            os filhos de seu elemento pai. eu sou Último parágrafo </p>
+
+     </div> 
+
+
+
+            <!-- <section class="container">
+
+                  <p>Pai</p>
+                  <span class="excluído">Filho</span>
+                  <br>
+                  <span>Filha</span>
+                  <p>Mãe</p>
+                  <a href="#">Link</a>
+
+            </section> -->
+
+</body>
+
+<style>
+      /* PSEUDO DO ELEMENTOS 
+      
+      :active => quando o elemento está ativo, ou seja, quando ele está s3ndo pressionado.
+      
+      :visited => seleciona o link que foi visitado.
+      
+      :hover => quando o mause passa por cima do elemento.
+      
+      :checked => usado em radio/ checkbox/  select. 
+      
+      :disabled => elemento desabilitado (button / input)
+      
+      :enabled => elemento esta habilitado (online).
+      
+      :focus => é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário selecionar um elemento.
+      
+      :read-only => selecionar um input ou textarea que são apenas leituras
+      
+      :empty => elemento que não tem filho
+      
+      
+      
+      
+      :first-child => Primeiro filho/ ex: => Primeiro (li) de uma (ul) e Primeiro (spam) de uma (div).
+      
+      :first-of-type => Primeiro elemento de seu tipo entre os filhos de seu elemento pai.
+      
+      :last child => Ultimo filho.
+      
+      :last-of-type => Ultimo elemento do seu tipo entre os filhos de seu elemento pai.
+      
+      :not() => estiliza o elementos, exceto que esta dentro do ().
+      
+      :nth-child() => seleciona o elemento baseado na sua posição ex=> nth-child(3).
+      
+      :nth-last-child() => seleciona o el3mnto baseado na sua posição contando de trás para frente.
+       
+      
+      */
+
+
+
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+      }
+
+
+
+      body {
+            margin: 100px 100px;
+            padding: 10px 10px;
+      }
+
+      h1 {
+            font-size: 20px;
+      }
+
+      ul {
+            margin-top: 20px;
+      }
+
+      /* coloriu a 1⁰ primeira li */
+      /*  :first-child => Primeiro filho/ ex: => Primeiro (li) de uma (ul)
+       e Primeiro (spam) de uma (div). */
+
+      /* li:first-child {
+            margin-top: 20px;
+            color: #7a00ff;
+      } */
+
+      /*  coloriu a última li :last child => Ultimo filho. */
+       /* li:last-child{
+      color:#0096ff; 
+      } */
+
+
+      /* ele so vai colori o que ele escolher 
+       :nth-child() => seleciona o elemento baseado na sua posição ex=> nth-child(3). */
+
+      li:nth-child(2) {
+            color: #f800ff;
+      } 
+
+      /* ele conta de trás para frente, ele vai colori o último de trás para frente 
+       :nth-last-child() => seleciona o el3mnto baseado na sua posição contando de trás para frente.*/
+
+       li:nth-last-child(1) {
+            color: #ff9d00;
+      } 
+
+      
+      /*  :first-of-type => Primeiro elemento de seu tipo entre os filhos de seu elemento pai. */
+      span:first-of-type{
+      color: #ff7300;
+            
+      }
+      /*  :last-of-type => Ultimo elemento do seu tipo entre os filhos de seu elemento pai. */
+      span:last-of-type{
+            color: #00c0ff;
+      }
+
+      p:first-of-type{
+            color: #ff000a;
+      }
+       /*  :last-of-type => Ultimo elemento do seu tipo entre os filhos de seu elemento pai. */
+      p:last-of-type{
+            color: #ff0088;
+      }
+
+ 
+
+
+      /* 
+      section {
+            margin-top: 50px;
+      } */
+
+      .container {
+            margin-top: 50px;
+      }
+
+      /* :not() => estiliza o elementos, exceto que esta dentro do (). */
+       /* .container :not(p) {
+      color:#211f1f;
+      
+      } */
+
+      /* :not() => estiliza o elementos, exceto que esta dentro do (). */
+       .container :not(.excluido) {
+            color: #e10e0e;
+      } 
+
+</style>
+
+</html>

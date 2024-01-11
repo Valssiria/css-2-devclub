@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO ELEMENTO</title>
+</head>
+<body>
+    
+<!--  Pseudo do elementos -->
+
+    <input type="text" placeholder="digite aqui">
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Iure totam laborum, odio asperiores excepturi eos in non omnis accusantium quas itaque!
+      Quas deleniti totam distinctio voluptatum aperiam! Dicta, quam excepturi?
+</p>
+
+<a href="#"> Meu link boladão </a>
+
+</body>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+          
+        background-color: rgba(126, 119, 119, 0.278);
+    }
+
+
+    input{
+        margin-top: 100px;
+        margin-left: 100px;
+        border: 1px solid #0405fc;
+        color: red;
+        margin-bottom: 20px;
+    }
+    /* trocar o placeholder do meu input com pseudo do elemento */
+    input::placeholder {
+        color: #ff1396;
+    }
+
+    p{
+        color: rgb(51, 26, 238);
+        margin-bottom: 10px;
+
+    }
+    /* altera somente a primeira letra utilizando pseudo do elemento*/
+    p::first-letter {
+        color: crimson;
+    }
+    /* colorir somente a primeira linha utilizando pseudo do elemento */
+    p::first-line {
+        color:#ff1396;
+    }
+
+    /* Esees dois são muito utilizados after o before*/
+    a{
+        color: rgb(107, 161, 26);
+    }
+
+    /* vai fica antes do meu elemento utilizando o before */
+    a::before {
+        content:" ↬ " ;
+    }
+/* vai fica depois do meu elemento utilizando o after */
+
+    a::after {
+            content: " ↫ ";
+    }
+
+</style>
+</html>

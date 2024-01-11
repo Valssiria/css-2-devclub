@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+      <meta charset="UTF-8">
+
+      <met http-equiv="X-UA-compatible" content="IE=edge">
+
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+            <link rel="stylesheet" href="./styles.css">
+
+            <title>Responsividade pt2</title>
+
+</head>
+
+<body>
+      <div></div>
+</body>
+<style>
+      /* Responsividade
+                
+   All: => para todos os dispositivo   
+   
+   Braille: => para dispositivo táteis 
+   
+   Embossed: => para dispositivo que imprimir em braile.
+   
+   Handheld: => para dispositivo portáteis, geralmente com telas pequenas e banda limitada. 
+   
+   Print: => para impressão em papel 
+   
+   Projection: => para apresentações como pps.
+   
+   Screen: => para monitores e dispositivo com telas colorida e resolução adequada
+   
+   Speech: => parq sintetizadores de voz a CSS 2 tem uma especificação de CSS chamada aural, onde podemos formatar as voz dos sentetizadores.
+   
+   
+     *ORIENTAÇÃO:
+     
+    portrait: altura maior que a largura 
+    
+     landscape:  largura maior de a altura 
+  
+*/
+
+
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+      }
+
+      /* 
+      body {
+            margin: 50px 50px;
+            padding: 50px 50px;
+      } */
+
+      div {
+            width: 700px;
+            height: 700px;
+            background: #150060;
+      }
+
+      /*  
+   Screen: => para monitores e dispositivo com telas colorida e resolução adequada 
+    and (orientation:landscape)*/
+      /* tem operados logicos é */
+
+      @media screen and (max-width: 700px) and (orientation: landscape) {
+
+            div {
+
+                  background: #e3680a;
+                  height: 200px;
+                  width: 200px;
+                 
+
+            }
+      }
+</style>
+
+</html>

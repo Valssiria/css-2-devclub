@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+      <meta charset="UTF-8">
+      
+      <met http-equiv="X-UA-compatible" content="IE=edge">
+             
+   <meta name="viewport"content="width=device-width,initial-scale=1.0">
+   
+  <link rel="stylesheet" href ="./styles.css">  
+   
+      <title>Responsividade pt1</title>
+      
+</head>
+
+<body>
+      <div>Responsividade</div>
+</body>
+<style>
+
+*{
+      margin: 0;
+      padding:0 ;
+      box-sizing:border-box;
+}
+
+div{
+      height:700px;
+      width: 700px;
+      background:#ffb200;
+}
+
+/* @media(min-width: 600px) */
+/* @media(max-width: 600px) */
+@media screen and (max-width: 600px) {
+
+      div{
+            background: #420202;
+            height: 320px;
+            width: 420px;
+      }
+}
+ 
+ 
+ /*   @media screen and 
+(max-width: 380px) and 
+(orientation:portrait){
+      div{
+            background: #ff00f1;
+      }
+}
+ */
+
+ /* quando ele passar de 600px ele vai trocar de cor a div ou class */
+ 
+ /*  @media screen and 
+(min-width: 600px) and 
+(orientation:landscape){
+
+      div{
+            
+      background: #ff7300;
+      }
+} */
+
+/*  
+@media screen and (min-width: 600px;) end (orientation:landscape){
+      div{
+         background: green;
+      }
+      
+}
+ */
+
+</style>
+</html>
